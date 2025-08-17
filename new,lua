@@ -1290,7 +1290,7 @@ local LocalPlayer = Players.LocalPlayer
 local Camera = Workspace.CurrentCamera
 local SilentAim, ProjectileDirection
 local ProjectileSpeed = 1000
-local ProjectileGravity = 10
+local ProjectileGravity = 8
 
 local WallCheckParams = RaycastParams.new()
 WallCheckParams.FilterType = Enum.RaycastFilterType.Blacklist
@@ -1487,7 +1487,7 @@ silentAim:Slider({
     Name = "Distance Limit",
     Flag = "SilentAim/DistanceLimit",
     Min = 100,
-    Max = 5000,
+    Max = 2000,
     Default = 1000,
     Callback = function(value)
         DistanceLimit = value
